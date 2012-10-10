@@ -68,15 +68,15 @@ $consumer_secret = "REPLACE WITH YOUR STACKMOB PRIVATE KEY";
 //following REST API endpoint is configured for registering push, as can be seen here:
 //http://www.stackmob.com/devcenter/docs/Push-API#a-register_a_device_to_receive_push_notifications|rest
 $http_method = "POST"; 
-//change this to "http://api.mob1.stackmob.com" if you want to try any CRUD method
-$rest_endpoint = "http://push.mob1.stackmob.com"; 
+//change this to "https://api.stackmob.com" if you want to try any CRUD method
+$rest_endpoint = "https://push.stackmob.com"; 
 $uri_info_path = "register_device_token_universal"; 
 $body = array('token' => array('type' => 'android', 'token' => 'REPLACE WITH YOUR ANDROID C2DM TOKEN'), 'userId' => 'johnsmith');
 
 
 /*
  * The following are tests you can uncomment to try CRUD methods for objects.
- * You can view the contents of your datastores here: https://www.stackmob.com/platform/api/schemas/browser
+ * You can view the contents of your datastores here: https://dashboard.stackmob.com/api/schemas/browser
  * The following examples are for a "user" object
  */
  
@@ -85,7 +85,7 @@ $body = array('token' => array('type' => 'android', 'token' => 'REPLACE WITH YOU
 //following will create a user named "phptest"
 //http://www.stackmob.com/devcenter/docs/Datastore-API#a-post_-_create_object|rest
 $http_method = "POST"; 
-$rest_endpoint = "http://api.mob1.stackmob.com"; 
+$rest_endpoint = "https://api.stackmob.com"; 
 $uri_info_path = "user"; 
 $body = array('username' => 'phptest', 'password' => 'phptest');
 */
@@ -95,7 +95,7 @@ $body = array('username' => 'phptest', 'password' => 'phptest');
 //following will return array of all users
 //http://www.stackmob.com/devcenter/docs/Datastore-API#a-get_-_read_objects|rest
 $http_method = "GET"; 
-$rest_endpoint = "http://api.mob1.stackmob.com"; 
+$rest_endpoint = "https://api.stackmob.com"; 
 $uri_info_path = "user"; 
 $body = NULL;
 */
@@ -105,7 +105,7 @@ $body = NULL;
 //following will return array of all users whose age is greater than or equal to 30
 //http://www.stackmob.com/devcenter/docs/Datastore-API#a-inequality_queries_______________|rest
 $http_method = "GET"; 
-$rest_endpoint = "http://api.mob1.stackmob.com"; 
+$rest_endpoint = "https://api.stackmob.com"; 
 $uri_info_path = "user?age[gte]=30"; 
 $body = NULL;
 */
@@ -115,7 +115,7 @@ $body = NULL;
 //following will add an age field to a user named "phptest"
 //http://www.stackmob.com/devcenter/docs/Datastore-API#a-put_-_update_object|rest
 $http_method = "PUT"; 
-$rest_endpoint = "http://api.mob1.stackmob.com"; 
+$rest_endpoint = "https://api.stackmob.com"; 
 $uri_info_path = "user/phptest"; 
 $body = array('age' => 30);
  */
@@ -125,7 +125,7 @@ $body = array('age' => 30);
 //following will add an age field to a user named "phptest"
 //http://www.stackmob.com/devcenter/docs/Datastore-API#a-delete_-_delete_object|rest
 $http_method = "DELETE"; 
-$rest_endpoint = "http://api.mob1.stackmob.com"; 
+$rest_endpoint = "https://api.stackmob.com"; 
 $uri_info_path = "user/phptest2"; 
 $body = NULL;
  */
