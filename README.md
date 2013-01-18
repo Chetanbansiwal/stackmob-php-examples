@@ -6,7 +6,8 @@ If you find this code useful, please feel free to fork it and adapt it to your o
 # Development to Production
 When moving from development to production, be sure to update your API Keys from development to production.  Your API keys are located in the StackMob Dashboard at https://dashboard.stackmob.com/settings
 
-You will also need to update the API version from "0" to "1".
+You will also need to update the API version from "0" to "1" in your request header.
+'Content-Type: application/vnd.stackmob+json; version=0',
 
 # Issues
 We would like this code to be functional with the StackMob API, but as we currently don't officially support it, we may be unable to fix bugs quickly. If you encounter a bug, we encourage you to either file an issue [here](https://github.com/stackmob/stackmob-php-examples/issues) and/or fork this repository, fix the bug, and submit a pull request with the fix.
