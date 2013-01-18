@@ -8,7 +8,7 @@ When moving from development to production, be sure to update your API Keys from
 
 You will also need to update the API version from "0" to "1" in your request header.
 
-##'Content-Type: application/vnd.stackmob+json; version=0'##
+<em>'Content-Type: application/vnd.stackmob+json; version=0'</em>
 
 # Issues
 We would like this code to be functional with the StackMob API, but as we currently don't officially support it, we may be unable to fix bugs quickly. If you encounter a bug, we encourage you to either file an issue [here](https://github.com/stackmob/stackmob-php-examples/issues) and/or fork this repository, fix the bug, and submit a pull request with the fix.
